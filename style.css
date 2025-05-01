@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* aniamtion direta para esquerda com delay [ amei ] */
+  @keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(100px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    animation: slideInRight 1s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 1000;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 24px;
+  }
+  .logo span {
+    color: #ff0000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 80px 40px;
+    flex-wrap: nowrap;
+  }
+  
+  /* Img side na esquerda */
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slideInRight 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+  .intro {
+    font-size: 24px;
+    color: white;
+  }
+  .intro span {
+    color: #00ffbf;
+  }
+  .avatar {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00ffbf;
+    margin-top: 10px;
+  }
+  
+  /* Tenho que melhorar mt nesse ponto {text direita */
+  .info {
+    flex: 2;
+    animation: slideInRight 1s ease forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+  }
+  .info h1 {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  .desc {
+    margin-bottom: 10px;
+  }
+  .skills {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .skills li {
+    margin: 4px 0;
+  }
+  
+  .socials {
+    margin-top: 20px;
+  }
+  .socials button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #00ffbf;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  .socials button:hover {
+    background-color: #00ffbf;
+    color: #000;
+  }
+  .hire {
+    background-color: #00ffbf;
+    color: #000;
+  }
